@@ -1,0 +1,25 @@
+.square {
+  aspect-ratio: 1;
+  background-color: var(--bg-primary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.square:hover:not(:disabled) {
+  background-color: var(--bg-secondary);
+  transform: scale(1.05);
+}
+
+.square.filled {
+  cursor: not-allowed;
+}
+
+.square:disabled {
+  opacity: 0.8;
+}

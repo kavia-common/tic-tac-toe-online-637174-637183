@@ -1,0 +1,52 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.game-title {
+  color: var(--text-primary);
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.game-status {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.restart-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.restart-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+  .game {
+    padding: 10px;
+  }
+  
+  .game-title {
+    font-size: 2rem;
+  }
+  
+  .game-status {
+    font-size: 1.2rem;
+  }
+}
